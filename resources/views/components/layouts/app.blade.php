@@ -13,14 +13,23 @@
 
         @livewireStyles
     </head>
-    <body class="bg-gray-100">
+    <body class="bg-gray-100 font-sans">
         <div class="flex min-h-screen">
             <x-side-bar/>
 
-            <main class="flex-1 py-18 px-12">
+            <div class="flex-1">
+                <div class="flex justify-end px-12 pt-6">
+                    <div class="bg-white px-6 py-3 rounded-lg flex items-center gap-4 font-bold">
+                        <img src="{{ asset('img/user.png')}}">
+                        Luan
+                    </div>
+                </div>
+            
+            <main class="flex-1 py-15 px-12">
 
                 {{ $slot }}
             </main>
+            </div>
         </div>    
 
 
